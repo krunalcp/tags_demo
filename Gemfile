@@ -24,8 +24,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'mysql2'
-# gem 'acts-as-taggable-on'
 gem 'active_record_query_trace'
+gem 'acts-as-taggable-on', '5.0.0'
 
 
 # Use Redis adapter to run Action Cable in production

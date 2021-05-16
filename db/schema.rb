@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_26_055542) do
+ActiveRecord::Schema.define(version: 2021_04_26_110600) do
 
   create_table "projects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "name"
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2021_04_26_055542) do
     t.integer "taggings_count", default: 0
     t.bigint "site_id"
     t.string "context", limit: 191
-    t.index ["name"], name: "index_tags_on_name", unique: true
+    t.index ["name"], name: "index_tags_on_name"
     t.index ["site_id", "name", "context"], name: "index_tags_on_site_id_and_name_and_context", unique: true
     t.index ["site_id"], name: "index_tags_on_site_id"
   end
