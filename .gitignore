@@ -33,3 +33,6 @@
 /config/master.key
 
 .DS_Store
+/lib/tags_5
+/lib/tags_6
+/lib/tags_change
